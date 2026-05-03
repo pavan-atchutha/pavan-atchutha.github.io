@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Dark theme (default) ───────────────────────────────────────────────── */
+:root, .dark {
+  --bg:        #0a0a0a;
+  --bg-2:      #060606;
+  --bg-card:   #111111;
+  --nav-bg:    rgba(10, 10, 10, 0.9);
+  --bd:        #1a1a1a;
+  --bd2:       #2a2a2a;
+  --tx:        #e2e8f0;
+  --tx2:       #94a3b8;
+  --tx3:       #64748b;
+  --tx4:       #4a5568;
+  --ac:        #00ff88;
+  --ac-h:      #00e07a;
+  --ac-6:      rgba(0, 255, 136, 0.06);
+  --ac-10:     rgba(0, 255, 136, 0.1);
+  --ac-25:     rgba(0, 255, 136, 0.25);
+  --ac-30:     rgba(0, 255, 136, 0.3);
+  --ac-40:     rgba(0, 255, 136, 0.4);
+  --grid-c:    rgba(0, 255, 136, 0.04);
+  --glow:      0 0 30px rgba(0, 255, 136, 0.4);
+  --card-shd:  0 20px 40px rgba(0, 255, 136, 0.08);
+}
+
+/* ── Light theme ────────────────────────────────────────────────────────── */
+.light {
+  --bg:        #f8fafc;
+  --bg-2:      #f1f5f9;
+  --bg-card:   #ffffff;
+  --nav-bg:    rgba(248, 250, 252, 0.92);
+  --bd:        #e2e8f0;
+  --bd2:       #cbd5e1;
+  --tx:        #0f172a;
+  --tx2:       #475569;
+  --tx3:       #64748b;
+  --tx4:       #94a3b8;
+  --ac:        #059669;
+  --ac-h:      #047857;
+  --ac-6:      rgba(5, 150, 105, 0.06);
+  --ac-10:     rgba(5, 150, 105, 0.1);
+  --ac-25:     rgba(5, 150, 105, 0.25);
+  --ac-30:     rgba(5, 150, 105, 0.3);
+  --ac-40:     rgba(5, 150, 105, 0.4);
+  --grid-c:    rgba(5, 150, 105, 0.07);
+  --glow:      0 0 30px rgba(5, 150, 105, 0.3);
+  --card-shd:  0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--tx);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--ac); border-radius: 3px; }
+
+::selection { background: var(--ac); color: var(--bg); }
+
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid-c) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-c) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.glow-text { text-shadow: var(--glow); }
+
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shd);
+  border-color: var(--ac-30);
+}
