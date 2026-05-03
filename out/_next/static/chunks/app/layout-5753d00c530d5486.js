@@ -1,0 +1,9 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[185],{574:function(e,t,r){Promise.resolve().then(r.bind(r,7475)),Promise.resolve().then(r.t.bind(r,1371,23)),Promise.resolve().then(r.t.bind(r,2853,23))},7475:function(e,t,r){"use strict";r.r(t),r.d(t,{ThemeProvider:function(){return ThemeProvider},useTheme:function(){return useTheme}});var n=r(7437),o=r(2265);let s=(0,o.createContext)({theme:"dark",toggle:()=>{}});function ThemeProvider(e){let{children:t}=e,[r,l]=(0,o.useState)("dark");return(0,o.useEffect)(()=>{let e=localStorage.getItem("theme")||"dark";l(e),document.documentElement.className=e},[]),(0,n.jsx)(s.Provider,{value:{theme:r,toggle:()=>{let e="dark"===r?"light":"dark";l(e),localStorage.setItem("theme",e),document.documentElement.className=e}},children:t})}let useTheme=()=>(0,o.useContext)(s)},2853:function(){},1371:function(e){e.exports={style:{fontFamily:"'__Inter_f367f3', '__Inter_Fallback_f367f3'",fontStyle:"normal"},className:"__className_f367f3"}},622:function(e,t,r){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var n=r(2265),o=Symbol.for("react.element"),s=Symbol.for("react.fragment"),l=Object.prototype.hasOwnProperty,u=n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,a={key:!0,ref:!0,__self:!0,__source:!0};function q(e,t,r){var n,s={},c=null,f=null;for(n in void 0!==r&&(c=""+r),void 0!==t.key&&(c=""+t.key),void 0!==t.ref&&(f=t.ref),t)l.call(t,n)&&!a.hasOwnProperty(n)&&(s[n]=t[n]);if(e&&e.defaultProps)for(n in t=e.defaultProps)void 0===s[n]&&(s[n]=t[n]);return{$$typeof:o,type:e,key:c,ref:f,props:s,_owner:u.current}}t.Fragment=s,t.jsx=q,t.jsxs=q},7437:function(e,t,r){"use strict";e.exports=r(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=574)}),_N_E=e.O()}]);
