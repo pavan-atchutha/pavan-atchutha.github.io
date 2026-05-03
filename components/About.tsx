@@ -40,7 +40,7 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="about" className="py-28" style={{ background: 'var(--bg)' }} ref={ref}>
+    <section id="about" className="py-28 scroll-mt-20" style={{ background: 'var(--bg)' }} ref={ref}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export default function About() {
           transition={{ duration: 0.55 }}
           className="text-center mb-16"
         >
-          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>01. About Me</span>
+          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>About Me</span>
           <h2 className="text-4xl font-bold mt-2" style={{ color: 'var(--tx)' }}>Who I Am</h2>
         </motion.div>
 
@@ -77,7 +77,7 @@ export default function About() {
             <p className="text-lg leading-relaxed" style={{ color: 'var(--tx2)' }}>
               I write <span className="font-medium" style={{ color: 'var(--ac)' }}>clean, maintainable Python</span>,
               prioritize <span className="font-medium" style={{ color: 'var(--ac)' }}>system reliability and performance</span>,
-              and adapt quickly to new domains — currently open to backend, data engineering, and full-stack roles.
+              and pick up new domains fast. Looking for backend, data engineering, or full-stack roles.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -109,7 +109,7 @@ export default function About() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-4"
               style={{ background: 'var(--ac-10)', border: '1px solid var(--ac-30)', color: 'var(--ac)' }}>
-              📊 Work impact & academic record
+              📊 Work Impact & Academic Record
             </div>
             <div className="grid grid-cols-2 gap-4">
             {stats.map((s, i) => (
@@ -118,10 +118,10 @@ export default function About() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.4 + i * 0.1 }}
-                className="rounded-2xl p-6 text-center card-hover"
+                className="rounded-2xl p-4 sm:p-6 text-center card-hover"
                 style={{ background: 'var(--bg-card)', border: '1px solid var(--bd)' }}
               >
-                <div className="text-3xl font-bold font-mono mb-2 tabular-nums" style={{ color: 'var(--ac)' }}>
+                <div className="text-2xl sm:text-3xl font-bold font-mono mb-2 tabular-nums leading-none" style={{ color: 'var(--ac)' }}>
                   <CountUp target={s.value} suffix={s.suffix} />
                 </div>
                 <div className="text-xs leading-tight" style={{ color: 'var(--tx3)' }}>{s.label}</div>

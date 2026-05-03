@@ -13,7 +13,7 @@ export default function Certifications() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="certifications" className="py-28" style={{ background: 'var(--bg)' }} ref={ref}>
+    <section id="certifications" className="py-28 scroll-mt-20" style={{ background: 'var(--bg)' }} ref={ref}>
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export default function Certifications() {
           transition={{ duration: 0.55 }}
           className="text-center mb-16"
         >
-          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>05. Certifications</span>
+          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>Certifications</span>
           <h2 className="text-4xl font-bold mt-2" style={{ color: 'var(--tx)' }}>Credentials</h2>
         </motion.div>
 

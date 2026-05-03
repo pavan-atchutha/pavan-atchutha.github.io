@@ -5,7 +5,7 @@ export default function Footer() {
         <p className="font-mono text-xs" style={{ color: 'var(--tx4)' }}>
           Designed &amp; built by{' '}
           <span style={{ color: 'var(--ac)' }}>Pavan Kumar Atchutha</span>
-          {' '}— 2025
+          {' '}— 2026
         </p>
       </div>
     </footer>

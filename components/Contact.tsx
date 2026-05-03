@@ -14,7 +14,7 @@ export default function Contact() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="contact" className="py-28" style={{ background: 'var(--bg-2)' }} ref={ref}>
+    <section id="contact" className="py-28 scroll-mt-20" style={{ background: 'var(--bg-2)' }} ref={ref}>
       <div className="max-w-3xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ export default function Contact() {
           transition={{ duration: 0.55 }}
           className="mb-6"
         >
-          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>06. Contact</span>
+          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>Contact</span>
           <h2 className="text-4xl font-bold mt-2" style={{ color: 'var(--tx)' }}>Get In Touch</h2>
         </motion.div>
 
@@ -33,8 +33,7 @@ export default function Contact() {
           className="text-lg mb-12 leading-relaxed"
           style={{ color: 'var(--tx3)' }}
         >
-          I&apos;m open to backend, data engineering, and full-stack opportunities across domains.
-          Feel free to reach out — I&apos;d love to connect!
+          Looking for backend, data engineering, or full-stack work. Drop me a message.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
@@ -67,13 +66,15 @@ export default function Contact() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.65 }}
         >
-          <a
+          <motion.a
             href="mailto:pavankumaratchutha@gmail.com"
             className="inline-flex items-center gap-2 px-10 py-4 font-bold rounded-xl text-base transition-colors duration-200"
             style={{ background: 'var(--ac)', color: 'var(--bg)' }}
+            whileHover={{ scale: 1.04, y: -2 }}
+            whileTap={{ scale: 0.97 }}
           >
             Say Hello →
-          </a>
+          </motion.a>
         </motion.div>
       </div>
     </section>

@@ -93,10 +93,8 @@ export default function Hero() {
           className="text-base sm:text-lg max-w-2xl mx-auto mb-12 leading-relaxed"
           style={{ color: 'var(--tx3)' }}
         >
-          Software Engineer with proven experience building production-grade systems — from{' '}
-          <span className="font-medium" style={{ color: 'var(--ac)' }}>algorithmic trading platforms</span> and
-          real-time data pipelines to scalable APIs. I deliver reliably, move fast,
-          and bring the same engineering discipline to any domain or stack.
+          Software Engineer open to any domain, any stack. I build things that work in
+          production — fast backends, clean APIs, systems that scale.
         </motion.p>
 
         <motion.div

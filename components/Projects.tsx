@@ -16,7 +16,7 @@ export default function Projects() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="projects" className="py-28" style={{ background: 'var(--bg-2)' }} ref={ref}>
+    <section id="projects" className="py-28 scroll-mt-20" style={{ background: 'var(--bg-2)' }} ref={ref}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,11 +24,11 @@ export default function Projects() {
           transition={{ duration: 0.55 }}
           className="text-center mb-16"
         >
-          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>04. Projects</span>
+          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>Projects</span>
           <h2 className="text-4xl font-bold mt-2" style={{ color: 'var(--tx)' }}>Professional Work</h2>
           <p className="text-sm mt-3" style={{ color: 'var(--tx3)' }}>
             Production systems built at{' '}
-            <span className="font-medium" style={{ color: 'var(--ac)' }}>A Plus Topper</span>
+            <a href="https://www.linkedin.com/company/aplustopper/about/" target="_blank" rel="noopener noreferrer" className="font-medium hover:underline" style={{ color: 'var(--ac)' }}>A Plus</a>
             {' '}— proprietary &amp; confidential
           </p>
         </motion.div>

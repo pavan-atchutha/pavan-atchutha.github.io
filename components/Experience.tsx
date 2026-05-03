@@ -6,7 +6,8 @@ import { Hl } from './Highlight'
 const items = [
   {
     role: 'Python Developer',
-    org: 'A Plus Topper',
+    org: 'A Plus',
+    orgUrl: 'https://www.linkedin.com/company/aplustopper/about/',
     location: 'Hyderabad, India',
     period: 'Dec 2024 – Present',
     badge: 'Full-time',
@@ -22,7 +23,8 @@ const items = [
   },
   {
     role: 'Python Developer Intern',
-    org: 'A Plus Topper',
+    org: 'A Plus',
+    orgUrl: 'https://www.linkedin.com/company/aplustopper/about/',
     location: 'Hyderabad, India',
     period: 'Jul 2024 – Dec 2024',
     badge: 'Internship',
@@ -54,7 +56,7 @@ export default function Experience() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="experience" className="py-28" style={{ background: 'var(--bg)' }} ref={ref}>
+    <section id="experience" className="py-28 scroll-mt-20" style={{ background: 'var(--bg)' }} ref={ref}>
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,12 +64,12 @@ export default function Experience() {
           transition={{ duration: 0.55 }}
           className="text-center mb-16"
         >
-          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>03. Experience</span>
+          <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'var(--ac)' }}>Experience</span>
           <h2 className="text-4xl font-bold mt-2" style={{ color: 'var(--tx)' }}>Work History</h2>
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-6 top-0 bottom-0 w-px" style={{ background: 'linear-gradient(to bottom, var(--ac), var(--ac-10), transparent)' }} />
+          <div className="absolute left-6 top-0 w-px" style={{ height: 'calc(100% - 3rem)', background: 'linear-gradient(to bottom, var(--ac), var(--ac-10), transparent)' }} />
 
           <div className="space-y-10">
             {items.map((item, i) => (
@@ -90,7 +92,11 @@ export default function Experience() {
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-5">
                     <div>
                       <h3 className="text-lg font-bold leading-snug" style={{ color: 'var(--tx)' }}>{item.role}</h3>
-                      <p className="font-medium text-sm mt-0.5" style={{ color: 'var(--ac)' }}>{item.org}</p>
+                      {'orgUrl' in item ? (
+                        <a href={(item as any).orgUrl} target="_blank" rel="noopener noreferrer" className="font-medium text-sm mt-0.5 hover:underline" style={{ color: 'var(--ac)' }}>{item.org}</a>
+                      ) : (
+                        <p className="font-medium text-sm mt-0.5" style={{ color: 'var(--ac)' }}>{item.org}</p>
+                      )}
                       <p className="text-xs mt-0.5" style={{ color: 'var(--tx3)' }}>{item.location}</p>
                     </div>
                     <div className="flex flex-col items-start sm:items-end gap-1.5 shrink-0">
