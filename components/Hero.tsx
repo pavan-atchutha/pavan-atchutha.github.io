@@ -6,7 +6,7 @@ const roles = [
   'Software Engineer',
   'Python Developer',
   'Algo Trading Engineer',
-  'Data Pipeline Architect',
+  'Data Pipeline Engineer',
   'Backend Systems Builder',
 ]
 
@@ -70,7 +70,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight mb-3 leading-none"
+          className="text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight mb-3 leading-none"
         >
           <span style={{ color: 'var(--tx)' }}>Pavan Kumar</span>
           <br />
@@ -95,7 +95,7 @@ export default function Hero() {
         >
           Software Engineer with proven experience building production-grade systems — from{' '}
           <span className="font-medium" style={{ color: 'var(--ac)' }}>algorithmic trading platforms</span> and
-          real-time data pipelines to scalable APIs. I take full ownership, ship fast,
+          real-time data pipelines to scalable APIs. I deliver reliably, move fast,
           and bring the same engineering discipline to any domain or stack.
         </motion.p>
 

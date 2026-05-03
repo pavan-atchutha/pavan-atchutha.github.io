@@ -6,8 +6,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Pavan Kumar Atchutha | Python Developer',
-  description: 'Python Developer specializing in algorithmic trading platforms, data pipelines, and high-performance backend systems.',
+  title: 'Pavan Kumar Atchutha | Software Engineer',
+  description: 'Software Engineer with 1.5+ years of experience building high-performance backend systems, scalable data pipelines, and production-grade APIs using Python. Open to backend, data engineering, and full-stack opportunities.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

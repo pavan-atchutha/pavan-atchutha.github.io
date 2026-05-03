@@ -15,9 +15,9 @@ const items = [
       'Architected and shipped end-to-end algorithmic trading platforms in Python & Django — covering rule-based, price-action, and indicator-driven strategies across equities, futures, and options, supporting both live execution and backtesting.',
       'Engineered high-throughput ELT data pipelines processing ~5M records/day and managing ~5 years of time-series market data, directly enabling quantitative research and strategy evaluation at scale.',
       'Drove a ~70% reduction in strategy research cycle time by optimizing backtesting modules and automating reporting workflows, accelerating decision-making for trading teams.',
-      'Designed and deployed a Telegram-based CLI automation gateway (OpenClaw framework) for intelligent task orchestration, eliminating manual intervention in recurring operational workflows.',
-      'Architected ClickHouse and PostgreSQL schemas optimized for high-throughput analytical queries and low-latency transactional workloads, improving system reliability and query speed.',
-      'Delivered production-ready RESTful APIs and WebSocket services for real-time market data streaming and order execution, supporting multi-application integration with minimal latency.',
+      'Designed and deployed a Telegram-based CLI automation gateway (OpenClaw framework) for automated task orchestration, eliminating manual intervention in recurring operational workflows.',
+      'Designed and optimized ClickHouse and PostgreSQL schemas for high-throughput analytical queries and low-latency transactional workloads, improving system reliability and query speed.',
+      'Delivered production-ready RESTful APIs and WebSocket services for real-time market data streaming and order execution, supporting multi-application integration with low latency.',
     ],
   },
   {
@@ -31,7 +31,7 @@ const items = [
       'Built and maintained Django-based web applications delivering scalable, user-facing trading tools in a production environment.',
       'Designed interactive options strategy charts (Bullish, Bearish, Butterfly) using Plotly and JavaScript, improving trader visibility into complex multi-leg positions.',
       'Implemented real-time data visualization modules for live stock tracking and strategy performance monitoring, enhancing analytical capabilities for end users.',
-      'Contributed independently to full-stack features — bridging backend data logic with responsive frontend interfaces — within a fast-paced fintech product team.',
+      'Contributed independently to full-stack features — bridging backend data logic with responsive frontend interfaces — within a collaborative product engineering team.',
     ],
   },
   {
@@ -42,7 +42,7 @@ const items = [
     badge: 'CGPA 8.86 / 10',
     active: false,
     points: [
-      'Graduated with First Class Distinction (CGPA 8.86/10) in Artificial Intelligence & Data Science.',
+      'Graduated with First Class with Distinction (CGPA 8.86/10) in Artificial Intelligence & Data Science.',
       'Built strong foundations in machine learning, statistical modeling, and data engineering through rigorous coursework and applied projects.',
       'Applied Python, NumPy, Pandas, Scikit-learn, and Matplotlib to build and evaluate end-to-end ML pipelines and data analysis solutions.',
     ],

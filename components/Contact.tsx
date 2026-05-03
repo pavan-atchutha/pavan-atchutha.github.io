@@ -33,7 +33,7 @@ export default function Contact() {
           className="text-lg mb-12 leading-relaxed"
           style={{ color: 'var(--tx3)' }}
         >
-          I&apos;m open to exciting opportunities in backend development, fintech, and data engineering.
+          I&apos;m open to backend, data engineering, and full-stack opportunities across domains.
           Feel free to reach out — I&apos;d love to connect!
         </motion.p>
 

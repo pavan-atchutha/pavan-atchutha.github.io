@@ -4,8 +4,8 @@ import { motion, useInView } from 'framer-motion'
 
 const certs = [
   { icon: '🐍', title: 'The Joy of Computing using Python', issuer: 'NPTEL', color: '#00ff88', desc: 'Strong foundation in Python programming — data structures, control flow, functions, and computational thinking applied to solve real problems.', link: null, meta: null },
-  { icon: '🗄️', title: 'SQL Certification', issuer: 'HackerRank', color: '#06b6d4', desc: 'Demonstrated proficiency in writing and understanding SQL queries for data management, joins, aggregations, and complex analysis.', link: 'https://www.hackerrank.com/certificates/fe15031baa5d', meta: null },
-  { icon: '📊', title: 'Data Science Bootcamp', issuer: 'OdinSchool', color: '#a78bfa', desc: 'Comprehensive data analysis, machine learning, and statistical modeling. Hands-on experience with NumPy, Pandas, Scikit-learn, and Matplotlib.', link: null, meta: 'ID: ODIN1002920' },
+  { icon: '🗄️', title: 'SQL Certification', issuer: 'HackerRank', color: '#06b6d4', desc: 'Demonstrated proficiency in writing SQL queries for data management, joins, aggregations, subqueries, and complex data analysis.', link: 'https://www.hackerrank.com/certificates/fe15031baa5d', meta: null },
+  { icon: '📊', title: 'Data Science Bootcamp', issuer: 'OdinSchool', color: '#a78bfa', desc: 'Comprehensive training in data analysis, machine learning, and statistical modeling — with hands-on experience using NumPy, Pandas, Scikit-learn, and Matplotlib.', link: null, meta: 'ID: ODIN1002920' },
 ]
 
 export default function Certifications() {

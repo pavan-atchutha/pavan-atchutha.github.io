@@ -61,25 +61,23 @@ export default function About() {
             <p className="text-lg leading-relaxed mb-5" style={{ color: 'var(--tx2)' }}>
               I&apos;m a <span className="font-semibold" style={{ color: 'var(--tx)' }}>Software Engineer</span> with a B.Tech in{' '}
               <span className="font-medium" style={{ color: 'var(--ac)' }}>AI & Data Science</span> and{' '}
-              <span className="font-semibold" style={{ color: 'var(--tx)' }}>1.5+ years</span> of professional experience delivering{' '}
-              <span style={{ color: '#06b6d4' }}>production-grade</span> backend systems in the{' '}
-              <span style={{ color: '#06b6d4' }}>fintech</span> domain.
+              <span className="font-semibold" style={{ color: 'var(--tx)' }}>1.5+ years</span> of professional experience
+              designing and shipping <span style={{ color: '#06b6d4' }}>production-grade</span> backend systems —
+              from high-volume <span style={{ color: '#06b6d4' }}>data pipelines</span> to
+              real-time <span style={{ color: '#06b6d4' }}>APIs</span> and automated workflows.
             </p>
             <p className="text-lg leading-relaxed mb-5" style={{ color: 'var(--tx2)' }}>
-              I take full ownership of the backend stack — architecting{' '}
-              <span style={{ color: '#06b6d4' }}>ELT</span> pipelines ingesting{' '}
-              <span className="font-semibold" style={{ color: 'var(--tx)' }}>5M+ records/day</span>, designing{' '}
+              I own the full backend lifecycle — architecting scalable data pipelines processing{' '}
+              <span className="font-semibold" style={{ color: 'var(--tx)' }}>5M+ records/day</span>, optimizing{' '}
               <span className="font-medium" style={{ color: 'var(--ac)' }}>ClickHouse</span> and{' '}
-              <span className="font-medium" style={{ color: 'var(--ac)' }}>PostgreSQL</span> schemas for{' '}
-              <span style={{ color: '#06b6d4' }}>high-throughput</span> analytics, and shipping{' '}
-              <span style={{ color: '#06b6d4' }}>low-latency</span>{' '}
-              <span className="font-medium" style={{ color: 'var(--ac)' }}>WebSocket</span> APIs.
+              <span className="font-medium" style={{ color: 'var(--ac)' }}>PostgreSQL</span> for{' '}
+              <span style={{ color: '#06b6d4' }}>high-throughput</span> workloads, and delivering{' '}
+              <span style={{ color: '#06b6d4' }}>low-latency</span> APIs under live production load.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--tx2)' }}>
-              I bring a strong bias for{' '}
-              <span className="font-medium" style={{ color: 'var(--ac)' }}>reliability, performance, and clean code</span>{' '}
-              — consistently reducing bottlenecks, automating workflows, and enabling faster decision-making in live{' '}
-              <span style={{ color: '#06b6d4' }}>algorithmic trading</span> environments.
+              I write <span className="font-medium" style={{ color: 'var(--ac)' }}>clean, maintainable Python</span>,
+              prioritize <span className="font-medium" style={{ color: 'var(--ac)' }}>system reliability and performance</span>,
+              and adapt quickly to new domains — currently open to backend, data engineering, and full-stack roles.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
