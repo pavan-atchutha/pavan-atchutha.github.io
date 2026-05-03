@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Pavan Kumar Atchutha | Software Engineer',
-  description: 'Software Engineer building data pipelines and high-performance backend systems.',
+  description: 'Python-focused Software Engineer building backends, data pipelines, and APIs. Open to backend, data, and full-stack roles.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
