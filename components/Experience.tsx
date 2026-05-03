@@ -13,7 +13,7 @@ const items = [
     badge: 'Full-time',
     active: true,
     points: [
-      'Architected and shipped end-to-end algorithmic trading platforms in Python & Django — covering rule-based, price-action, and indicator-driven strategies across equities, futures, and options, supporting both live execution and backtesting.',
+      'Architected and shipped end-to-end platforms in Python & Django — covering rule-based, price-action, and indicator-driven strategies across equities, futures, and options, supporting both live execution and backtesting.',
       'Engineered high-throughput ELT data pipelines processing ~5M records/day and managing ~5 years of time-series market data, directly enabling quantitative research and strategy evaluation at scale.',
       'Drove a ~70% reduction in strategy research cycle time by optimizing backtesting modules and automating reporting workflows, accelerating decision-making for trading teams.',
       'Designed and deployed a Telegram-based CLI automation gateway (OpenClaw framework) for automated task orchestration, eliminating manual intervention in recurring operational workflows.',
