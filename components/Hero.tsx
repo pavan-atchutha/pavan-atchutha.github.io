@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 const roles = [
   'Software Engineer',
   'Python Developer',
-  'Algo Trading Engineer',
   'Data Pipeline Engineer',
   'Backend Systems Builder',
 ]
@@ -93,8 +92,7 @@ export default function Hero() {
           className="text-base sm:text-lg max-w-2xl mx-auto mb-12 leading-relaxed"
           style={{ color: 'var(--tx3)' }}
         >
-          Software Engineer open to any domain, any stack. I build things that work in
-          production — fast backends, clean APIs, systems that scale.
+          Software Engineer building data pipelines and high-performance backend systems.
         </motion.p>
 
         <motion.div
